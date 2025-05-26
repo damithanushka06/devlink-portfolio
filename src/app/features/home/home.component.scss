@@ -1,0 +1,21 @@
+.hero {
+  text-align: center;
+  padding: 3rem 1rem;
+  h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+  }
+  p {
+    font-size: 1.5rem;
+    color: #555;
+    margin-bottom: 2rem;
+  }
+  .btn {
+    background-color: #007acc;
+    color: white;
+    padding: 0.8rem 1.6rem;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: bold;
+  }
+}
