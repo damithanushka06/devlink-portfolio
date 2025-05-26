@@ -1,0 +1,27 @@
+h2 {
+  margin-bottom: 1rem;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  margin-bottom: 2rem;
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 1rem;
+
+  h3 {
+    margin: 0;
+    color: #007acc;
+  }
+  p {
+    margin: 0.5rem 0;
+  }
+  a {
+    color: #007acc;
+    text-decoration: none;
+    font-weight: bold;
+  }
+}
