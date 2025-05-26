@@ -1,59 +1,57 @@
-# DevlinkPortfolio
+# DevLink - Developer Portfolio
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 19.2.12.
+DevLink is a clean and modular personal portfolio web application built with Angular. It provides developers with a user-friendly interface to showcase their skills, projects, blogs, and contact information in one place.
 
-## Development server
+The project uses Angular’s standalone components and lazy-loaded feature modules to keep the codebase scalable and maintainable. The design focuses on simplicity, responsiveness, and easy navigation, allowing developers to highlight their professional profile effectively.
 
-To start a local development server, run:
+The portfolio includes sections such as Home, Projects, Skills, Blog, and Contact, with reusable UI components like header, sidebar, and footer for consistent styling and layout.
 
-```bash
-ng serve
-```
+## Project Structure
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
+The app is organized with a feature-based folder structure, promoting separation of concerns and ease of development:
 
-## Code scaffolding
 
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
+src/
+├── app/
+│ ├── core/ # Shared services and models
+│ ├── shared/ # Shared UI components like header, footer, sidebar
+│ ├── features/ # Feature modules: home, projects, skills, blog, contact
+│ ├── app.component.ts # Root component
+│ ├── app.routes.ts # Application routes
+│ └── app.config.ts # App configuration with routing providers
+└── assets/ # Images, icons, and static files
 
-```bash
-ng generate component component-name
-```
 
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
+## Key Features
 
-```bash
-ng generate --help
-```
+- Angular standalone components for easier setup and improved modularity
+- Lazy loading of feature modules for optimized performance
+- Responsive UI with SCSS styling
+- GitHub API integration to dynamically fetch and display projects (optional)
+- Routing with guards and modular route definitions
+- Simple contact form integration
 
-## Building
+## Third-Party Libraries
 
-To build the project run:
+This project uses the following external libraries:
 
-```bash
-ng build
-```
+- Angular Router (for navigation and lazy loading)
+- Angular Common (for common directives and pipes)
+- SCSS for styling and layout
 
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
+You can extend this by adding libraries like RxJS, Angular Material, or form validation libraries as needed.
 
-## Running unit tests
+## Getting Started
 
-To execute unit tests with the [Karma](https://karma-runner.github.io) test runner, use the following command:
+1. Clone the repository
+2. Run `npm install` to install dependencies
+3. Use `ng serve` to run the app locally
+4. Open `http://localhost:4200` in your browser
 
-```bash
-ng test
-```
+## Purpose
 
-## Running end-to-end tests
+DevLink is intended to help developers build a professional online presence with a customizable portfolio that highlights their coding skills and projects. It’s ideal for job seekers, freelancers, and open source contributors.
 
-For end-to-end (e2e) testing, run:
+---
 
-```bash
-ng e2e
-```
-
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
-
-## Additional Resources
-
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+This project is a solid foundation for anyone looking to showcase their work professionally while practicing Angular best practices.
